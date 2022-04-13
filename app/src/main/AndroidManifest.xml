@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.semuaonline.desabangunmulyo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/favicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/favicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Desabangunmulyo">
+        <activity
+            android:name=".Transparasi"
+            android:exported="false" />
+        <activity
+            android:name=".surat"
+            android:exported="false" />
+        <activity
+            android:name=".profil_desa"
+            android:exported="false" />
+        <activity
+            android:name=".produk_desa"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Lapor_Kejadian"
+            android:exported="false" />
+        <activity
+            android:name=".galeri"
+            android:exported="false" />
+        <activity
+            android:name=".data_penduduk"
+            android:exported="false" />
+        <activity
+            android:name=".contact"
+            android:exported="false" />
+        <activity
+            android:name=".Benner_visi"
+            android:exported="false" />
+        <activity
+            android:name=".benner_profil"
+            android:exported="false" />
+        <activity
+            android:name=".belanja"
+            android:exported="false" />
+        <activity
+            android:name=".banner_umum"
+            android:exported="false" />
+        <activity
+            android:name=".banner_sejarah"
+            android:exported="false" />
+        <activity
+            android:name=".aparatur"
+            android:exported="false" />
+        <activity
+            android:name=".all_info_update"
+            android:exported="false" />
+        <activity
+            android:name=".absen"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
